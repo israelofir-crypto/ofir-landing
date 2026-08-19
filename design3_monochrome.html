@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>אופיר ישראל — רו״ח, חשב בכיר</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --w:#ffffff; --w2:#f6f6f4; --k:#0b0b0b; --k2:#1c1c1a;
+  --g1:#6e6e68; --g2:#a5a59d; --line:#0b0b0b1a; --line2:#0b0b0b0d;
+  --sans:'Heebo',system-ui,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+  --max:1200px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--w);color:var(--k);font-family:var(--sans);font-size:17px;line-height:1.7;font-weight:400}
+.wrap{max-width:var(--max);margin-inline:auto;padding-inline:clamp(1.2rem,5vw,3rem)}
+a{color:inherit}
+::selection{background:var(--k);color:var(--w)}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--g1)}
+
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:#fffffff2;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;gap:1.5rem;height:72px}
+.brand{font-weight:900;font-size:1.1rem;letter-spacing:-.01em}
+.nav-links{margin-inline-start:auto;display:flex;gap:1.8rem}
+.nav-links a{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--g1)}
+.nav-links a:hover{color:var(--k)}
+@media(max-width:820px){.nav-links{display:none}}
+.navcta{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;
+  background:var(--k);color:var(--w);padding:.6rem 1.1rem}
+.navcta:hover{background:var(--k2)}
+
+/* hero */
+.hero{padding-block:clamp(3.5rem,11vw,8rem) clamp(2.5rem,6vw,4rem)}
+.hero .mono{margin-bottom:2rem;display:block}
+h1{font-weight:900;font-size:clamp(3.4rem,13vw,10rem);line-height:.86;letter-spacing:-.045em}
+h1 .l2{display:block;font-weight:200;color:var(--g1)}
+.hero-foot{display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:end;margin-top:clamp(2rem,5vw,3.4rem);
+  padding-top:1.8rem;border-top:1px solid var(--k)}
+@media(max-width:860px){.hero-foot{grid-template-columns:1fr;align-items:start}}
+.hero-foot p{font-size:clamp(1.02rem,2.2vw,1.3rem);font-weight:300;max-width:40ch;line-height:1.55}
+.hero-foot p b{font-weight:700}
+.cta-row{display:flex;gap:.6rem;flex-wrap:wrap}
+.btn{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;
+  padding:.9rem 1.5rem;transition:.16s;white-space:nowrap}
+.btn.k{background:var(--k);color:var(--w)}
+.btn.k:hover{background:var(--k2)}
+.btn.o{border:1px solid var(--k)}
+.btn.o:hover{background:var(--k);color:var(--w)}
+
+/* marquee strip */
+.strip{border-block:1px solid var(--k);background:var(--k);color:var(--w);overflow:hidden}
+.strip-in{display:flex;gap:3rem;padding-block:.85rem;font-family:var(--mono);font-size:12px;letter-spacing:.2em;
+  text-transform:uppercase;white-space:nowrap;justify-content:center;flex-wrap:wrap}
+.strip-in span{opacity:.65}
+.strip-in span b{opacity:1;font-weight:500}
+
+/* numbers */
+.nums{display:grid;grid-template-columns:repeat(4,1fr)}
+@media(max-width:820px){.nums{grid-template-columns:repeat(2,1fr)}}
+.num{padding:clamp(1.6rem,4vw,2.6rem) 1.2rem;border-inline-start:1px solid var(--line)}
+.num:first-child{border-inline-start:0}
+@media(max-width:820px){.num:nth-child(3){border-inline-start:0}.num:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+.num b{display:block;font-weight:900;font-size:clamp(2.4rem,6vw,3.6rem);line-height:1;letter-spacing:-.04em}
+.num span{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--g1);margin-top:.7rem}
+
+/* sections */
+section{padding-block:clamp(3.4rem,8vw,6rem);border-top:1px solid var(--line)}
+.sec-head{display:grid;grid-template-columns:200px 1fr;gap:2rem;margin-bottom:2.8rem}
+@media(max-width:860px){.sec-head{grid-template-columns:1fr;gap:.8rem;margin-bottom:2rem}}
+h2{font-weight:900;font-size:clamp(1.8rem,5vw,3.2rem);letter-spacing:-.03em;line-height:1.08;max-width:16ch}
+.sec-head p{color:var(--g1);font-weight:300;max-width:46ch;font-size:16px;margin-top:.7rem}
+
+.stack{display:grid}
+.item{display:grid;grid-template-columns:200px 1fr auto;gap:2rem;padding-block:2rem;border-top:1px solid var(--line);align-items:start}
+.item:first-child{border-top:1px solid var(--k)}
+@media(max-width:860px){.item{grid-template-columns:1fr;gap:.5rem;padding-block:1.5rem}}
+.item .idx{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;color:var(--g2);padding-top:.5rem}
+.item h3{font-weight:700;font-size:clamp(1.2rem,3vw,1.7rem);letter-spacing:-.015em;margin-bottom:.55rem}
+.item p{color:var(--g1);font-weight:300;font-size:15.5px;max-width:58ch}
+.item .mark{font-weight:900;font-size:1.5rem;color:var(--line);line-height:1}
+@media(max-width:860px){.item .mark{display:none}}
+
+/* ai */
+.ai-wrap{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--k)}
+@media(max-width:900px){.ai-wrap{grid-template-columns:1fr}}
+.ai-l{padding:clamp(1.6rem,4vw,2.6rem);border-inline-end:1px solid var(--k)}
+@media(max-width:900px){.ai-l{border-inline-end:0;border-bottom:1px solid var(--k)}}
+.ai-r{padding:clamp(1.6rem,4vw,2.6rem);background:var(--k);color:var(--w)}
+.ai-l h3{font-weight:900;font-size:1.5rem;letter-spacing:-.02em;margin-bottom:1.3rem}
+.ai-l dl{display:grid;gap:1.1rem}
+.ai-l dt{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--g2)}
+.ai-l dd{font-size:15.5px;font-weight:300;color:var(--k2);margin-top:.2rem}
+.ai-r .mono{color:#ffffff70;margin-bottom:1.5rem;display:block}
+.wt{margin-bottom:1.3rem}
+.wt:last-child{margin-bottom:0}
+.wt b{display:flex;justify-content:space-between;font-size:14px;font-weight:500;margin-bottom:.5rem}
+.wt b em{font-style:normal;font-family:var(--mono);font-size:11px;color:#ffffff80;letter-spacing:.1em}
+.wt i{display:block;height:1px;background:#ffffff2e;position:relative}
+.wt i::after{content:"";position:absolute;inset-block:-1px;inset-inline-start:0;width:var(--v);height:3px;background:var(--w)}
+
+/* contact */
+.cta-block{display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:end}
+@media(max-width:860px){.cta-block{grid-template-columns:1fr;align-items:start}}
+.cta-block h2{max-width:14ch}
+.cinfo{display:grid;gap:1.1rem;min-width:230px}
+.cinfo div .mono{display:block;margin-bottom:.2rem}
+.cinfo a{font-size:1.24rem;font-weight:500;text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:.15rem}
+.cinfo a:hover{border-bottom-color:var(--k)}
+footer{border-top:1px solid var(--k);padding-block:1.6rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+footer span{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--g1)}
+.todo{font-style:italic;color:var(--g2)}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap nav-in">
+  <div class="brand">אופיר ישראל</div>
+  <div class="nav-links">
+    <a href="#core">ליבה</a><a href="#ai">AI</a><a href="#exp">ניסיון</a><a href="#contact">קשר</a>
+  </div>
+  <a class="navcta" href="#cv">קורות חיים</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <span class="mono">רואה חשבון · חשב בכיר · פתח תקווה</span>
+  <h1>אופיר<span class="l2">ישראל</span></h1>
+  <div class="hero-foot">
+    <p>12 שנה בחשבונאות של חברות ציבוריות. <b>דוחות IFRS מאוחדים, דיווח לבורסה, תשקיף והנפקה</b> — ומערך BI שהופך את הנתון להחלטה.</p>
+    <div class="cta-row">
+      <a class="btn k" href="#contact">צור קשר</a>
+      <a class="btn o" href="#cv">הורדת CV</a>
+    </div>
+  </div>
+</div></header>
+
+<div class="strip"><div class="wrap"><div class="strip-in">
+  <span><b>IFRS</b> מאוחדים</span>
+  <span><b>בורסה</b> ורשות ני״ע</span>
+  <span><b>תשקיף</b> והנפקה</span>
+  <span><b>Power BI</b> ואוטומציה</span>
+  <span><b>AI</b> בפיננסים</span>
+</div></div></div>
+
+<div class="wrap"><div class="nums">
+  <div class="num"><b>12+</b><span>שנות ניסיון</span></div>
+  <div class="num"><b>4×</b><span>דיווח רבעוני</span></div>
+  <div class="num"><b>1</b><span>תשקיף והנפקה</span></div>
+  <div class="num"><b>∞</b><span>סקרנות למספרים</span></div>
+</div></div>
+
+<section id="core"><div class="wrap">
+  <div class="sec-head">
+    <span class="mono">01 — תחומי ליבה</span>
+    <div><h2>מה אני עושה טוב</h2>
+      <p>שלושה תחומים שבהם הניסיון מצטבר לכדי יתרון אמיתי לארגון.</p></div>
+  </div>
+  <div class="stack">
+    <div class="item">
+      <div class="idx">א</div>
+      <div><h3>חשבונאות חברה ציבורית</h3>
+        <p>דוחות כספיים מאוחדים לפי IFRS, דיווחים מיידיים ותקופתיים לבורסה ולרשות ניירות ערך, ליווי תשקיף והנפקה, ועבודה שוטפת מול רואי החשבון המבקרים.</p></div>
+      <div class="mark">01</div>
+    </div>
+    <div class="item">
+      <div class="idx">ב</div>
+      <div><h3>תקצוב, תזרים ובקרה</h3>
+        <p>בניית תקציב שנתי והתאמתו לאורך השנה, תחזית תזרים מזומנים, ניתוח סטיות מול תקציב, ומערך בקרות פנימיות שמונע הפתעות ברבעון.</p></div>
+      <div class="mark">02</div>
+    </div>
+    <div class="item">
+      <div class="idx">ג</div>
+      <div><h3>מערכות מידע ו‑BI</h3>
+        <p>חיבור בין ה‑ERP לדוח הניהולי: מודלים ב‑Power BI, אוטומציה של תהליכי סגירה, והפיכת נתון גולמי לתמונה שמנכ״ל ודירקטוריון יכולים לפעול לפיה.</p></div>
+      <div class="mark">03</div>
+    </div>
+  </div>
+</div></section>
+
+<section id="ai"><div class="wrap">
+  <div class="sec-head">
+    <span class="mono">02 — AI בפיננסים</span>
+    <div><h2>יישום והובלה</h2>
+      <p>בינה מלאכותית שווה משהו רק כשהיא נוגעת בתהליך אמיתי, ונשארת תחת בקרה אנושית מלאה.</p></div>
+  </div>
+  <div class="ai-wrap">
+    <div class="ai-l">
+      <h3>שלושה שלבים</h3>
+      <dl>
+        <dt>יישום</dt>
+        <dd>מיפוי התהליכים שבאמת מרוויחים מאוטומציה — התאמות, סיווגים, איתור חריגות בכרטסת — והטמעתם בעבודה השוטפת של המחלקה.</dd>
+        <dt>הובלה</dt>
+        <dd>הכשרת הצוות, הגדרת גבולות שימוש וביקורת אנושית, ושמירה על מסלול ביקורת מלא לכל פלט אוטומטי.</dd>
+        <dt>אימפקט</dt>
+        <dd>קיצור זמן הסגירה, פחות טעויות ידניות, ויותר שעות שמופנות לניתוח ולתמיכה בהחלטות הנהלה.</dd>
+      </dl>
+    </div>
+    <div class="ai-r">
+      <span class="mono">חלוקת המאמץ בסגירה</span>
+      <div class="wt"><b><span>איסוף נתונים והתאמות</span><em>אוטומציה</em></b><i style="--v:82%"></i></div>
+      <div class="wt"><b><span>איתור חריגות ובקרה</span><em>מודל + אדם</em></b><i style="--v:58%"></i></div>
+      <div class="wt"><b><span>ניתוח והמלצה</span><em>אנושי</em></b><i style="--v:34%"></i></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="exp"><div class="wrap">
+  <div class="sec-head">
+    <span class="mono">03 — ניסיון</span>
+    <div><h2>המסלול</h2></div>
+  </div>
+  <div class="stack">
+    <div class="item">
+      <div class="idx">היום</div>
+      <div><h3>חשב בכיר</h3>
+        <p><b>קבוצת מרכז הפורמיקה אברבוך — חברה ציבורית.</b><br>
+        אחריות על הדוחות הכספיים המאוחדים לפי IFRS, הדיווח לבורסה ולרשות ניירות ערך, התקציב והתזרים, ופיתוח מערך ה‑BI והאוטומציה של תהליכי הסגירה.</p></div>
+      <div class="mark">→</div>
+    </div>
+    <div class="item">
+      <div class="idx">קודם</div>
+      <div><h3>תפקיד קודם</h3>
+        <p class="todo">[למילוי — חברה, תפקיד, שנים ותיאור קצר מקורות החיים]</p></div>
+      <div class="mark">→</div>
+    </div>
+    <div class="item">
+      <div class="idx">התמחות</div>
+      <div><h3>רואה חשבון · התמחות</h3>
+        <p class="todo">[למילוי — משרד ההתמחות והשנים]</p></div>
+      <div class="mark">→</div>
+    </div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <div class="cta-block">
+    <div>
+      <span class="mono">04 — צור קשר</span>
+      <h2 style="margin-top:.8rem">נדבר על התפקיד הבא</h2>
+      <p style="color:var(--g1);font-weight:300;max-width:42ch;margin-top:.8rem">
+        מחפש תפקיד <b style="font-weight:700;color:var(--k)">מנהל כספים</b> בארגון שרוצה מחלקת כספים שהיא שותפה להחלטות — לא רק מפיקת דוחות.</p>
+    </div>
+    <div class="cinfo">
+      <div><span class="mono">טלפון</span><a href="tel:0528775563" dir="ltr">052-877-5563</a></div>
+      <div><span class="mono">אימייל</span><a href="mailto:israel.ofir@gmail.com" dir="ltr">israel.ofir@gmail.com</a></div>
+    </div>
+  </div>
+</div></section>
+
+<div class="wrap"><footer>
+  <span>© 2026 אופיר ישראל · רו״ח</span>
+  <span id="cv">קורות חיים מלאים — לבקשה</span>
+</footer></div>
+
+</body>
+</html>

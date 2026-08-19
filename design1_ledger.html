@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>אופיר ישראל · רו״ח וחשב בכיר</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f4f1ea; --card:#fbfaf6;
+  --ink:#16130f; --ink2:#3c352c; --mute:#7b7263;
+  --rule:#16130f1f; --rule2:#16130f0d;
+  --acc:#b8452f;
+  --serif:'Frank Ruhl Libre',Georgia,serif;
+  --sans:'Assistant',system-ui,sans-serif;
+  --max:1140px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.7;
+  background-image:radial-gradient(1000px 500px at 90% -5%,#b8452f0a,transparent)}
+.wrap{max-width:var(--max);margin-inline:auto;padding-inline:clamp(1.1rem,4vw,2rem)}
+a{color:inherit}
+::selection{background:var(--acc);color:var(--paper)}
+
+.rail{position:fixed;inset-block:0;inset-inline-start:0;width:64px;border-inline-end:1px solid var(--rule);
+  display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:1.6rem 0;z-index:50;
+  background:var(--paper)}
+.rail .vert{writing-mode:vertical-rl;transform:rotate(180deg);font-size:12px;letter-spacing:.28em;color:var(--mute);text-transform:uppercase}
+.rail .mk{width:30px;height:30px;border:1.5px solid var(--ink);border-radius:50%;display:grid;place-items:center;
+  font-family:var(--serif);font-weight:900;font-size:14px}
+@media(max-width:860px){.rail{display:none}}
+.shell{margin-inline-start:64px}
+@media(max-width:860px){.shell{margin-inline-start:0}}
+
+nav{border-bottom:1px solid var(--rule);background:var(--paper);position:sticky;top:0;z-index:40}
+.nav-in{display:flex;align-items:center;gap:1.4rem;height:66px}
+.brand{font-family:var(--serif);font-weight:900;font-size:1.32rem}
+.brand i{color:var(--acc);font-style:normal}
+.nav-links{margin-inline-start:auto;display:flex;gap:1.5rem;font-size:14.5px;color:var(--ink2)}
+.nav-links a{text-decoration:none;padding-block:.2rem;border-bottom:1.5px solid transparent}
+.nav-links a:hover{border-bottom-color:var(--acc);color:var(--acc)}
+@media(max-width:760px){.nav-links{display:none}}
+.navcta{font-size:14px;font-weight:700;border:1.5px solid var(--ink);padding:.42rem 1rem;text-decoration:none;transition:.18s}
+.navcta:hover{background:var(--ink);color:var(--paper)}
+
+.hero{padding-block:clamp(3rem,8vw,6rem) clamp(2.5rem,6vw,4rem);border-bottom:1px solid var(--rule)}
+.eyebrow{display:flex;align-items:center;gap:.7rem;font-size:12.5px;letter-spacing:.24em;color:var(--mute);
+  text-transform:uppercase;margin-bottom:1.5rem}
+.eyebrow::after{content:"";flex:1;height:1px;background:var(--rule)}
+h1{font-family:var(--serif);font-weight:900;line-height:.98;letter-spacing:-.015em;font-size:clamp(3rem,10vw,6.6rem)}
+h1 .sub{display:block;font-size:clamp(1.1rem,2.6vw,1.85rem);font-weight:500;line-height:1.35;color:var(--ink2);
+  margin-top:1.1rem;max-width:22ch}
+.hero-grid{display:grid;grid-template-columns:1.35fr .95fr;gap:clamp(2rem,5vw,4rem);align-items:end}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;align-items:start}}
+.lede{font-size:1.02rem;color:var(--ink2);max-width:44ch;border-inline-start:2px solid var(--acc);padding-inline-start:1.1rem}
+.lede b{font-weight:700;color:var(--ink)}
+.cta-row{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.8rem}
+.btn{font-family:var(--sans);font-size:15px;font-weight:700;text-decoration:none;padding:.78rem 1.5rem;
+  border:1.5px solid var(--ink);transition:.18s;display:inline-block}
+.btn.solid{background:var(--ink);color:var(--paper)}
+.btn.solid:hover{background:var(--acc);border-color:var(--acc)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+
+.figs{display:grid;grid-template-columns:repeat(4,1fr);border-block:1px solid var(--rule)}
+@media(max-width:800px){.figs{grid-template-columns:repeat(2,1fr)}}
+.fig{padding:1.6rem 1.2rem;border-inline-start:1px solid var(--rule)}
+.fig:first-child{border-inline-start:0}
+@media(max-width:800px){.fig:nth-child(3){border-inline-start:0}.fig:nth-child(-n+2){border-bottom:1px solid var(--rule)}}
+.fig .n{font-family:var(--serif);font-weight:900;font-size:clamp(2.1rem,5vw,3rem);line-height:1;
+  font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.fig .n em{font-style:normal;color:var(--acc)}
+.fig .l{font-size:13.5px;color:var(--mute);margin-top:.45rem}
+
+section{padding-block:clamp(3rem,7vw,5.5rem);border-bottom:1px solid var(--rule)}
+.sec-head{display:grid;grid-template-columns:auto 1fr;gap:1.1rem;align-items:baseline;margin-bottom:2.4rem}
+.sec-num{font-family:var(--serif);font-size:14px;color:var(--acc);font-weight:700;letter-spacing:.1em}
+h2{font-family:var(--serif);font-weight:700;font-size:clamp(1.6rem,4vw,2.5rem);line-height:1.15}
+.sec-sub{grid-column:2;color:var(--mute);font-size:15.5px;max-width:52ch;margin-top:.4rem}
+
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
+@media(max-width:860px){.cols{grid-template-columns:1fr}}
+.col{background:var(--card);padding:1.7rem 1.5rem}
+.col h3{font-family:var(--serif);font-size:1.24rem;font-weight:700;margin-bottom:.6rem}
+.col p{font-size:15px;color:var(--ink2)}
+.col .tag{display:inline-block;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);
+  border:1px solid #b8452f4d;padding:.16rem .55rem;margin-bottom:.9rem}
+
+.ai{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.6rem,4vw,3rem);align-items:center}
+@media(max-width:900px){.ai{grid-template-columns:1fr}}
+.ai-list{list-style:none;display:grid;gap:1rem}
+.ai-list li{display:grid;grid-template-columns:auto 1fr;gap:.9rem;padding-bottom:1rem;border-bottom:1px solid var(--rule2)}
+.ai-list li:last-child{border-bottom:0;padding-bottom:0}
+.ai-list .k{font-family:var(--serif);font-weight:900;color:var(--acc);font-size:1.05rem;line-height:1.5}
+.ai-list b{display:block;font-size:1.02rem;margin-bottom:.15rem}
+.ai-list span{font-size:14.5px;color:var(--ink2)}
+.plate{background:var(--ink);color:var(--paper);padding:2rem 1.8rem;position:relative;overflow:hidden}
+.plate::before{content:"";position:absolute;inset:0;
+  background-image:linear-gradient(var(--paper) 1px,transparent 1px),linear-gradient(90deg,var(--paper) 1px,transparent 1px);
+  background-size:26px 26px;opacity:.055}
+.plate h4{font-family:var(--serif);font-size:1.05rem;font-weight:500;color:#ffffffb0;position:relative;margin-bottom:1.3rem}
+.bars{display:grid;gap:.85rem;position:relative}
+.bar b{font-size:13px;font-weight:600;display:flex;justify-content:space-between;color:#ffffffd0;margin-bottom:.34rem}
+.bar i{display:block;height:5px;background:#ffffff1f;position:relative}
+.bar i::after{content:"";position:absolute;inset-block:0;inset-inline-start:0;width:var(--w);background:var(--acc)}
+.bar:nth-child(2) i::after{background:#d9a441}
+.bar:nth-child(3) i::after{background:#6f8f6a}
+
+.tl{display:grid}
+.tl-item{display:grid;grid-template-columns:150px 1fr;gap:1.6rem;padding-block:1.5rem;border-top:1px solid var(--rule)}
+.tl-item:first-child{border-top:0;padding-top:0}
+@media(max-width:760px){.tl-item{grid-template-columns:1fr;gap:.4rem}}
+.tl-when{font-size:13.5px;color:var(--mute);letter-spacing:.06em;padding-top:.3rem}
+.tl-what h3{font-family:var(--serif);font-size:1.3rem;font-weight:700}
+.tl-org{color:var(--acc);font-size:14.5px;font-weight:600;margin-bottom:.5rem}
+.tl-what p{font-size:15px;color:var(--ink2);max-width:60ch}
+.todo{color:var(--mute);font-style:italic;font-size:14px}
+
+.chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.chip{font-size:13.5px;border:1px solid var(--rule);padding:.36rem .85rem;background:var(--card);color:var(--ink2)}
+.chip.hi{border-color:var(--acc);color:var(--acc);font-weight:600}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.6rem,4vw,3rem)}
+@media(max-width:800px){.two{grid-template-columns:1fr}}
+.two h3{font-family:var(--serif);font-size:1.15rem;margin-bottom:.9rem}
+
+.contact{background:var(--ink);color:var(--paper);border-bottom:0}
+.contact h2{color:var(--paper)}
+.contact .sec-num{color:#d9a441}
+.c-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#ffffff1a;border:1px solid #ffffff1a;margin-top:.6rem}
+@media(max-width:760px){.c-grid{grid-template-columns:1fr}}
+.c-cell{background:var(--ink);padding:1.5rem}
+.c-cell .l{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:#ffffff70;margin-bottom:.5rem}
+.c-cell a,.c-cell span{font-family:var(--serif);font-size:1.16rem;text-decoration:none;color:var(--paper)}
+.c-cell a:hover{color:#d9a441}
+footer{padding-block:1.6rem;font-size:13px;color:var(--mute);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<div class="rail" aria-hidden="true">
+  <div class="mk">א</div>
+  <div class="vert">Ofir Israel · CPA</div>
+  <div class="mk" style="border-color:var(--acc);color:var(--acc)">25</div>
+</div>
+
+<div class="shell">
+<nav><div class="wrap nav-in">
+  <div class="brand">אופיר ישראל<i>.</i></div>
+  <div class="nav-links">
+    <a href="#focus">תחומי ליבה</a><a href="#ai">AI בפיננסים</a><a href="#exp">ניסיון</a><a href="#tools">כלים</a>
+  </div>
+  <a class="navcta" href="#contact">צור קשר</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div class="eyebrow">רואה חשבון · חשב בכיר</div>
+  <div class="hero-grid">
+    <div>
+      <h1>אופיר<br>ישראל
+        <span class="sub">מספרים שמובילים להחלטה — לא רק לדוח.</span>
+      </h1>
+    </div>
+    <div>
+      <p class="lede">12 שנות ניסיון בחשבונאות של חברות ציבוריות: <b>דוחות IFRS מאוחדים</b>, דיווח לבורסה, תשקיף והנפקה, תקצוב ותזרים. בונה את התשתית שבה הנתון מגיע נקי, בזמן, ומוכן להחלטה.</p>
+      <div class="cta-row">
+        <a class="btn solid" href="#contact">דברו איתי</a>
+        <a class="btn ghost" href="#cv">הורדת קורות חיים</a>
+      </div>
+    </div>
+  </div>
+</div></header>
+
+<div class="wrap"><div class="figs">
+  <div class="fig"><div class="n">12<em>+</em></div><div class="l">שנות ניסיון</div></div>
+  <div class="fig"><div class="n">IFRS</div><div class="l">דוחות מאוחדים</div></div>
+  <div class="fig"><div class="n">4<em>×</em></div><div class="l">דיווח רבעוני לבורסה</div></div>
+  <div class="fig"><div class="n">1</div><div class="l">תשקיף והנפקה</div></div>
+</div></div>
+
+<section id="focus"><div class="wrap">
+  <div class="sec-head">
+    <span class="sec-num">01</span><h2>תחומי ליבה</h2>
+    <p class="sec-sub">שלושת המקומות שבהם אני מייצר את ההשפעה הגדולה ביותר בארגון.</p>
+  </div>
+  <div class="cols">
+    <div class="col"><span class="tag">דיווח</span><h3>חשבונאות חברה ציבורית</h3>
+      <p>דוחות כספיים מאוחדים לפי IFRS, דיווחים מיידיים ותקופתיים לבורסה ולרשות ניירות ערך, ליווי תשקיף והנפקה, ועבודה שוטפת מול רואי החשבון המבקרים.</p></div>
+    <div class="col"><span class="tag">בקרה</span><h3>תקצוב, תזרים ובקרה</h3>
+      <p>בניית תקציב שנתי והתאמתו לאורך השנה, תחזית תזרים מזומנים, ניתוח סטיות מול תקציב, ומערך בקרות פנימיות שמונע הפתעות ברבעון.</p></div>
+    <div class="col"><span class="tag">מערכות</span><h3>מערכות מידע ו‑BI</h3>
+      <p>חיבור בין ה‑ERP לדוח הניהולי: מודלים ב‑Power BI, אוטומציה של תהליכי סגירה, והפיכת נתון גולמי לתמונה שמנכ״ל ודירקטוריון יכולים לפעול לפיה.</p></div>
+  </div>
+</div></section>
+
+<section id="ai"><div class="wrap">
+  <div class="sec-head">
+    <span class="sec-num">02</span><h2>AI בפיננסים — יישום והובלה</h2>
+    <p class="sec-sub">לא באזז. תהליכים שבהם בינה מלאכותית מקצרת סגירה, מחדדת בקרה ומשחררת זמן לניתוח.</p>
+  </div>
+  <div class="ai">
+    <ul class="ai-list">
+      <li><span class="k">↳</span><div><b>יישום</b><span>זיהוי התהליכים שבאמת מרוויחים מאוטומציה — התאמות, סיווגים, איתור חריגות בכרטסת — והטמעתם בעבודה השוטפת של המחלקה.</span></div></li>
+      <li><span class="k">↳</span><div><b>הובלה</b><span>הכשרת הצוות לעבוד עם הכלים, הגדרת גבולות שימוש וביקורת אנושית, ושמירה על מסלול ביקורת מלא לכל פלט אוטומטי.</span></div></li>
+      <li><span class="k">↳</span><div><b>אימפקט</b><span>קיצור זמן הסגירה, פחות טעויות ידניות, ויותר שעות שמופנות לניתוח ולתמיכה בהחלטות הנהלה במקום להקלדה.</span></div></li>
+    </ul>
+    <div class="plate">
+      <h4>לאן הולך הזמן במחלקת כספים</h4>
+      <div class="bars">
+        <div class="bar"><b><span>איסוף והתאמות</span><span>אוטומציה</span></b><i style="--w:78%"></i></div>
+        <div class="bar"><b><span>בקרה ואיתור חריגות</span><span>מודל + אדם</span></b><i style="--w:55%"></i></div>
+        <div class="bar"><b><span>ניתוח והמלצה</span><span>אנושי</span></b><i style="--w:32%"></i></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section id="exp"><div class="wrap">
+  <div class="sec-head">
+    <span class="sec-num">03</span><h2>ניסיון</h2>
+  </div>
+  <div class="tl">
+    <div class="tl-item">
+      <div class="tl-when">היום</div>
+      <div class="tl-what">
+        <h3>חשב בכיר</h3>
+        <div class="tl-org">קבוצת מרכז הפורמיקה אברבוך — חברה ציבורית</div>
+        <p>אחריות על הדוחות הכספיים המאוחדים של הקבוצה לפי IFRS, הדיווח לבורסה ולרשות ניירות ערך, התקציב והתזרים, וכן על פיתוח מערך ה‑BI והאוטומציה של תהליכי הסגירה.</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-when">קודם</div>
+      <div class="tl-what">
+        <h3>תפקיד קודם</h3>
+        <div class="tl-org">שם החברה</div>
+        <p class="todo">[למילוי — תפקיד, שנים ותיאור קצר מקורות החיים]</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-when">התמחות</div>
+      <div class="tl-what">
+        <h3>רואה חשבון · התמחות</h3>
+        <div class="tl-org">שם המשרד</div>
+        <p class="todo">[למילוי — משרד ההתמחות והשנים]</p>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section id="tools"><div class="wrap">
+  <div class="sec-head">
+    <span class="sec-num">04</span><h2>כלים והשכלה</h2>
+  </div>
+  <div class="two">
+    <div>
+      <h3>כלים שאני עובד איתם</h3>
+      <div class="chips">
+        <span class="chip hi">Power BI</span><span class="chip hi">IFRS</span><span class="chip">Excel מתקדם</span>
+        <span class="chip">SAP / ERP</span><span class="chip">Priority</span><span class="chip">SQL</span>
+        <span class="chip hi">כלי AI לפיננסים</span><span class="chip">אוטומציית תהליכים</span><span class="chip">בקרה פנימית</span>
+      </div>
+    </div>
+    <div>
+      <h3>השכלה ורישוי</h3>
+      <div class="chips">
+        <span class="chip hi">רואה חשבון מוסמך</span><span class="chip">חשבונאות ומנהל עסקים</span><span class="chip">עברית · אנגלית</span>
+      </div>
+      <p style="font-size:14.5px;color:var(--ink2);margin-top:1rem">מחפש את התפקיד הבא כ<b>מנהל כספים</b> — בארגון שרוצה מחלקת כספים שהיא שותפה להחלטות, לא רק מפיקת דוחות.</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+  <div class="sec-head">
+    <span class="sec-num">05</span><h2>נדבר</h2>
+  </div>
+  <div class="c-grid">
+    <div class="c-cell"><div class="l">טלפון</div><a href="tel:0528775563" dir="ltr">052-877-5563</a></div>
+    <div class="c-cell"><div class="l">אימייל</div><a href="mailto:israel.ofir@gmail.com" dir="ltr">israel.ofir@gmail.com</a></div>
+    <div class="c-cell"><div class="l">אזור</div><span>פתח תקווה והמרכז</span></div>
+  </div>
+</div></section>
+
+<div class="wrap"><footer>
+  <span>© 2026 אופיר ישראל · רואה חשבון</span>
+  <span id="cv">קורות חיים מלאים — זמינים לבקשה</span>
+</footer></div>
+</div>
+</body>
+</html>
