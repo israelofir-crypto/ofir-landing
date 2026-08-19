@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>אופיר ישראל · רו״ח וחשב בכיר — נעים להכיר</title>
+<meta name="description" content="אופיר ישראל — רואה חשבון וחשב בכיר שמביא לפיננסים ראש טכנולוגי ויישום AI. 12 שנות ניסיון, חברה ציבורית, IFRS, Power BI. דף היכרות אישי.">
+<meta name="theme-color" content="#0c3b49">
+<meta property="og:title" content="אופיר ישראל · נעים להכיר">
+<meta property="og:description" content="רו״ח וחשב בכיר — ראש טכנולוגי ויישום AI בפיננסים.">
+
+<!--
+  ════════════════════════════════════════════════════════════════════════
+  OFIR ISRAEL — דף נחיתה אישי · וריאנט "PETROL & AMBER EDITORIAL".
+  קובץ יחיד · דו‑לשוני HE/EN · פטרול עמוק + ענבר/ברונזה + אבן בהירה.
+  ⚠️ פרטים אישיים = בלוק CONFIG אחד בתחתית (כולל cvUrl ו‑linkedin להשלמה).
+  ════════════════════════════════════════════════════════════════════════
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Frank+Ruhl+Libre:ital,wght@0,500;0,700;0,900;1,500&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --stone:#f6f3ee; --stone2:#efe9e0; --white:#ffffff;
+    --petrol:#0c3b49; --petrol2:#0f5566; --petrol3:#14707f;
+    --ink:#123b45; --soft:#4a6b72; --muted:#7d949a;
+    --amber:#dd8a2b; --amber2:#eab866; --amber-soft:#f5e2c4;
+    --line:rgba(18,59,69,.13); --line2:rgba(18,59,69,.07);
+    --lined:rgba(234,184,102,.22);
+    --petrol-grad:linear-gradient(145deg,#0c3b49,#0f5566 55%,#14707f);
+    --petrol-grad2:linear-gradient(160deg,#0a3540,#0f5566 60%,#166978);
+    --amber-grad:linear-gradient(120deg,#dd8a2b,#eab866);
+    --shadow:0 30px 70px rgba(12,59,73,.16);
+    --shadow-sm:0 12px 34px rgba(12,59,73,.10);
+    --shadow-amber:0 16px 40px rgba(221,138,43,.34);
+    --maxw:1220px; --ease:cubic-bezier(.22,1,.36,1); --r:18px;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Heebo','Segoe UI',sans-serif;background:var(--stone);color:var(--ink);
+    line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:clip;direction:rtl}
+  a{color:inherit;text-decoration:none}
+  img,svg{display:block;max-width:100%}
+  ::selection{background:rgba(221,138,43,.24)}
+  :focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:6px}
+  .num{unicode-bidi:plaintext}
+  section[id]{scroll-margin-top:84px}
+
+  h1,h2,h3{line-height:1.08;letter-spacing:-.02em;font-weight:800}
+  .serif{font-weight:700}
+  html[dir="rtl"] .serif{font-family:'Frank Ruhl Libre',serif}
+  html[dir="ltr"] .serif{font-family:'Playfair Display',serif}
+  .amber-txt{color:var(--amber)}
+  .ac{font-style:italic;font-weight:700;color:var(--amber)}
+  html[dir="rtl"] .ac{font-family:'Frank Ruhl Libre',serif} html[dir="ltr"] .ac{font-family:'Playfair Display',serif}
+  .on-dark .ac{color:var(--amber2)}
+  .hl{color:var(--ink);font-weight:700}
+  .grad{color:var(--amber)} /* legacy hook from engine → amber */
+
+  .eyebrow{display:inline-flex;align-items:center;gap:.7rem;font-size:.72rem;font-weight:800;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--amber)}
+  .eyebrow::before{content:'';width:30px;height:2px;border-radius:2px;background:var(--amber-grad)}
+  .on-dark .eyebrow{color:var(--amber2)}
+  .on-dark .eyebrow::before{background:var(--amber2)}
+
+  main,header,footer{position:relative;z-index:2}
+  .wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:clamp(1.1rem,4vw,2.6rem)}
+  section{padding-block:clamp(3.4rem,7.5vw,6.4rem)}
+
+  .btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-weight:700;font-size:.98rem;
+    cursor:pointer;padding:.85rem 1.7rem;border-radius:12px;border:1.6px solid transparent;
+    transition:transform .3s var(--ease),box-shadow .3s,background .3s,color .25s,border-color .25s;white-space:nowrap}
+  .btn svg{width:18px;height:18px}
+  .btn-amber{background:var(--amber-grad);color:#3a2408;box-shadow:var(--shadow-amber);font-weight:800}
+  .btn-amber:hover{box-shadow:0 22px 50px rgba(221,138,43,.5);transform:translateY(-2px)}
+  .btn-outline{background:transparent;border-color:var(--line);color:var(--ink)}
+  .btn-outline:hover{border-color:var(--petrol2);color:var(--petrol2)}
+  .on-dark .btn-outline{border-color:rgba(234,184,102,.5);color:var(--amber2)}
+  .on-dark .btn-outline:hover{border-color:var(--amber2);background:rgba(234,184,102,.1)}
+  .btn-lg{padding:1rem 2.1rem;font-size:1.04rem}
+
+  #prog{position:fixed;top:0;inset-inline-start:0;height:3px;width:0;z-index:1200;background:var(--amber-grad)}
+
+  /* nav */
+  header.nav{position:fixed;inset-inline:0;top:0;z-index:1000;transition:background .4s,box-shadow .4s,border-color .4s;border-bottom:1px solid transparent}
+  header.nav.solid{background:rgba(246,243,238,.86);backdrop-filter:blur(16px) saturate(150%);border-bottom-color:var(--line2);box-shadow:0 6px 26px rgba(12,59,73,.09)}
+  .nav-in{max-width:var(--maxw);margin-inline:auto;height:74px;padding-inline:clamp(1.1rem,4vw,2.6rem);display:flex;align-items:center;gap:1rem}
+  .brand{display:flex;align-items:baseline;gap:.4rem;font-weight:900;font-size:1.42rem;cursor:pointer;letter-spacing:-.02em}
+  .brand .bd{width:9px;height:9px;border-radius:50%;background:var(--amber-grad);align-self:flex-end;margin-bottom:.34em}
+  .nav-links{display:flex;gap:.1rem;margin-inline-start:auto}
+  .nav-links a{font-size:.92rem;font-weight:600;color:var(--soft);padding:.45rem .85rem;border-radius:9px;transition:.2s;position:relative}
+  .nav-links a:hover{color:var(--ink);background:rgba(18,59,69,.05)}
+  .nav-links a.active{color:var(--amber)}
+  .nav-act{display:flex;align-items:center;gap:.6rem}
+  .lang{display:inline-flex;border:1.6px solid var(--line);border-radius:100px;overflow:hidden;font-weight:800;font-size:.8rem;background:var(--white)}
+  .lang button{padding:.36rem .7rem;cursor:pointer;background:transparent;border:0;color:var(--soft);opacity:.75;transition:.2s;font-family:inherit;font-weight:800}
+  .lang button.on{background:var(--petrol-grad);color:#fff;opacity:1}
+  .burger{display:none;width:44px;height:44px;border:1.6px solid var(--line);border-radius:12px;background:var(--white);color:var(--ink);cursor:pointer;place-items:center}
+  .burger svg{width:22px;height:22px}
+  .mob{position:fixed;inset:0;z-index:1100;background:var(--petrol-grad);color:#eaf3f2;display:flex;flex-direction:column;
+    justify-content:center;padding:2rem clamp(1.4rem,6vw,3rem);transform:translateY(-100%);transition:transform .55s var(--ease)}
+  .mob.open{transform:none}
+  .mob a{font-weight:800;font-size:clamp(1.8rem,7vw,2.7rem);padding:.42rem 0;border-bottom:1px solid rgba(234,184,102,.18);color:#eef6f5}
+  .mob a:hover{color:var(--amber2)}
+  .mob .mclose{position:absolute;top:1.4rem;inset-inline-end:1.4rem;width:48px;height:48px;border:1.6px solid rgba(234,184,102,.35);border-radius:12px;background:transparent;color:#eaf3f2;cursor:pointer;display:grid;place-items:center}
+
+  /* ── HERO ── */
+  .hero{position:relative;min-height:100svh;display:flex;align-items:center;padding-top:74px;overflow:hidden;
+    background:radial-gradient(120% 90% at 88% 8%,rgba(234,184,102,.16),transparent 46%),
+               radial-gradient(90% 80% at 6% 96%,rgba(20,112,127,.10),transparent 50%),var(--stone)}
+  .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(2rem,5vw,4.4rem);align-items:center;width:100%}
+  .hero-eyebrow{margin-bottom:1.3rem}
+  .hero h1{font-size:clamp(2.9rem,7.6vw,5.6rem);font-weight:900;margin:.2rem 0 .6rem;letter-spacing:-.035em;color:var(--petrol)}
+  .hero .role{font-size:clamp(1.1rem,2.4vw,1.5rem);font-weight:600;color:var(--ink);max-width:22ch}
+  .hero .role b{color:var(--amber);font-weight:800}
+  .hero .lead{max-width:46ch;margin-top:1.2rem;font-size:clamp(1rem,2vw,1.16rem);color:var(--soft)}
+  .rotate{margin-top:1.7rem;display:flex;align-items:center;gap:.9rem;font-size:1.02rem;min-height:2em}
+  .rotate .rk{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:800}
+  .rotate .rw{font-weight:800;color:var(--amber);font-size:1.16rem}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:.85rem;margin-top:2.1rem}
+  .hero-eyebrow,.hero h1,.hero .role,.hero .lead,.rotate,.hero-cta{opacity:0;animation:fu .8s var(--ease) forwards}
+  .hero h1{animation-delay:.1s}.hero .role{animation-delay:.22s}.hero .lead{animation-delay:.34s}.rotate{animation-delay:.46s}.hero-cta{animation-delay:.58s}
+  @keyframes fu{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+
+  /* hero visual: SVG finance chart card */
+  .hero-visual{position:relative;opacity:0;animation:fu 1s var(--ease) .4s forwards}
+  .chartcard{position:relative;background:var(--petrol-grad);border-radius:24px;padding:1.7rem 1.7rem 1.3rem;
+    box-shadow:0 44px 90px rgba(12,59,73,.34);overflow:hidden}
+  .chartcard::after{content:'';position:absolute;inset:0;background:radial-gradient(60% 55% at 82% 6%,rgba(234,184,102,.24),transparent 60%);pointer-events:none}
+  .cc-top{display:flex;justify-content:space-between;align-items:flex-start;color:#dbeceb;margin-bottom:.6rem;position:relative;z-index:1}
+  .cc-top .lbl{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--amber2);font-weight:800}
+  .cc-top .big{font-size:1.7rem;font-weight:900;color:#fff;letter-spacing:-.02em;line-height:1.1;margin-top:.2rem}
+  .cc-top .tag{font-size:.72rem;font-weight:800;color:#0c3b49;background:var(--amber2);border-radius:100px;padding:.28rem .7rem;white-space:nowrap}
+  .cc-svg{position:relative;z-index:1;width:100%;height:auto}
+  .cc-legend{display:flex;gap:1.2rem;margin-top:.5rem;position:relative;z-index:1;flex-wrap:wrap}
+  .cc-legend span{display:inline-flex;align-items:center;gap:.4rem;font-size:.76rem;color:#cfe3e2;font-weight:600}
+  .cc-legend i{width:16px;height:3px;border-radius:2px;display:block}
+  .float-chip{position:absolute;background:rgba(255,255,255,.94);border:1px solid var(--line2);border-radius:13px;
+    padding:.55rem .85rem;font-weight:800;font-size:.82rem;color:var(--petrol);box-shadow:var(--shadow-sm);display:flex;align-items:center;gap:.45rem;z-index:3}
+  .float-chip i{width:9px;height:9px;border-radius:50%;background:var(--amber-grad);display:block}
+  .fc1{top:-14px;inset-inline-start:-14px;animation:floaty 6s ease-in-out infinite}
+  .fc2{bottom:26px;inset-inline-end:-16px;animation:floaty 7s ease-in-out infinite .8s}
+  @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-11px)}}
+  .scrollcue{position:absolute;inset-inline-start:50%;bottom:20px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.4rem;
+    color:var(--muted);font-size:.64rem;letter-spacing:.24em;text-transform:uppercase;font-weight:800;opacity:0;animation:fu 1s 1.2s forwards;z-index:2}
+  .scrollcue .m{width:22px;height:34px;border:1.6px solid var(--muted);border-radius:13px;position:relative}
+  .scrollcue .m::after{content:'';position:absolute;top:6px;inset-inline-start:50%;transform:translateX(-50%);width:4px;height:7px;border-radius:2px;background:var(--amber);animation:wheel 1.6s var(--ease) infinite}
+  @keyframes wheel{0%{opacity:0;transform:translate(-50%,0)}40%{opacity:1}80%{opacity:0;transform:translate(-50%,11px)}}
+
+  /* ── FACTS band (petrol) ── */
+  .facts-band{background:var(--petrol-grad2);color:#eaf3f2;position:relative;overflow:hidden}
+  .facts-band::before{content:'';position:absolute;inset:0;background:radial-gradient(50% 120% at 15% 0,rgba(234,184,102,.16),transparent 55%);pointer-events:none}
+  .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.4rem,4vw,3rem);position:relative;z-index:1}
+  .fact{text-align:center;position:relative}
+  .fact:not(:last-child)::after{content:'';position:absolute;inset-inline-end:0;top:12%;height:76%;width:1px;background:rgba(234,184,102,.28)}
+  html[dir="ltr"] .fact:not(:last-child)::after{inset-inline-end:0}
+  .fact .n{font-weight:900;font-size:clamp(2.4rem,6vw,4rem);line-height:1;letter-spacing:-.03em;color:#fff}
+  .fact .n .num{color:var(--amber2)}
+  .fact .l{color:#bcd6d5;font-size:clamp(.82rem,1.6vw,.98rem);margin-top:.6rem;font-weight:500;max-width:16ch;margin-inline:auto}
+
+  /* ── PULL QUOTE band ── */
+  .quote-band{background:var(--stone);border-block:1px solid var(--line2)}
+  .quote-band .wrap{display:grid;grid-template-columns:auto 1fr;gap:clamp(1.4rem,4vw,3rem);align-items:start}
+  .quote-mark{font-family:'Frank Ruhl Libre',serif;font-size:clamp(5rem,14vw,10rem);line-height:.6;color:var(--amber);font-weight:900;opacity:.85}
+  .quote-body blockquote{font-size:clamp(1.4rem,3.6vw,2.5rem);line-height:1.32;font-weight:700;color:var(--petrol);letter-spacing:-.02em}
+  .quote-body blockquote .ac{font-size:1em}
+  .quote-rule{width:64px;height:4px;border-radius:3px;background:var(--amber-grad);margin-top:1.6rem;margin-bottom:1rem}
+  .quote-by{color:var(--soft);font-weight:600;font-size:1rem}
+  .quote-by b{color:var(--ink);font-weight:800}
+
+  /* section heads */
+  .sec-head{max-width:720px;margin-bottom:clamp(2rem,4vw,3.2rem)}
+  .sec-head.cen{margin-inline:auto;text-align:center}
+  .sec-head h2{font-size:clamp(2rem,5vw,3.2rem);margin:1rem 0 .7rem;color:var(--petrol)}
+  .sec-head p{color:var(--soft);font-size:1.06rem}
+  .sec-idx{font-family:'Frank Ruhl Libre',serif;font-size:.9rem;font-weight:700;color:var(--amber);letter-spacing:.1em}
+
+  /* ── ABOUT ── */
+  .about-grid{display:grid;grid-template-columns:1.55fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+  .about-lead{font-size:clamp(1.2rem,2.6vw,1.7rem);line-height:1.5;font-weight:300;color:var(--soft)}
+  .about-lead .hl{color:var(--petrol);font-weight:700}
+  .chips{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.9rem}
+  .chip{display:inline-flex;align-items:center;gap:.45rem;font-size:.86rem;font-weight:700;color:var(--ink);
+    background:var(--white);border:1px solid var(--line);border-radius:100px;padding:.52rem 1rem;box-shadow:var(--shadow-sm)}
+  .chip svg{width:15px;height:15px;color:var(--amber)}
+  .about-side{background:var(--white);border:1px solid var(--line2);border-radius:var(--r);padding:1.7rem;box-shadow:var(--shadow-sm);position:relative;overflow:hidden}
+  .about-side::before{content:'';position:absolute;inset-block:0;inset-inline-start:0;width:5px;background:var(--amber-grad)}
+  .about-side .sh{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:800;margin-bottom:1.1rem}
+  .mini-stat{display:flex;align-items:baseline;gap:.7rem;padding-block:.7rem;border-bottom:1px dashed var(--line)}
+  .mini-stat:last-child{border-bottom:0}
+  .mini-stat .mv{font-weight:900;font-size:1.5rem;color:var(--petrol2);letter-spacing:-.02em;min-width:2.4em}
+  .mini-stat .ml{color:var(--soft);font-size:.92rem;font-weight:500}
+
+  /* ── WHAT I BRING (editorial numbered cards) ── */
+  .caps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+  .cap{position:relative;background:var(--white);border:1px solid var(--line2);border-radius:var(--r);padding:2rem 1.7rem 1.8rem;overflow:hidden;
+    box-shadow:var(--shadow-sm);transition:transform .35s var(--ease),box-shadow .35s,border-color .35s}
+  .cap:hover{transform:translateY(-8px);box-shadow:var(--shadow);border-color:var(--lined)}
+  .cap .idx{font-family:'Frank Ruhl Libre',serif;font-size:2.6rem;font-weight:900;line-height:1;color:var(--stone2);position:absolute;top:1.1rem;inset-inline-end:1.4rem;transition:color .35s}
+  .cap:hover .idx{color:var(--amber-soft)}
+  .cap .ic{width:56px;height:56px;border-radius:15px;display:grid;place-items:center;margin-bottom:1.2rem;color:var(--amber);background:rgba(221,138,43,.1);border:1px solid rgba(221,138,43,.25);position:relative;z-index:1}
+  .cap .ic svg{width:27px;height:27px}
+  .cap h3{font-size:1.24rem;margin-bottom:.55rem;color:var(--petrol)}
+  .cap p{color:var(--soft);font-size:.96rem}
+  .cap .star{display:inline-flex;align-items:center;gap:.35rem;font-size:.66rem;font-weight:800;letter-spacing:.1em;color:#3a2408;background:var(--amber2);border-radius:100px;padding:.2rem .6rem;margin-bottom:.9rem}
+  .cap .rule{width:44px;height:3px;border-radius:2px;background:var(--amber-grad);margin-top:1.1rem}
+
+  /* ── AI FEATURE block (petrol, with data-graphic) ── */
+  .ai-feature{background:var(--petrol-grad);color:#eaf3f2;position:relative;overflow:hidden}
+  .ai-feature::before{content:'';position:absolute;inset:0;background:radial-gradient(55% 90% at 88% 12%,rgba(234,184,102,.16),transparent 55%);pointer-events:none}
+  .ai-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(2rem,5vw,4rem);align-items:center;position:relative;z-index:1}
+  .ai-feature h2{font-size:clamp(2rem,4.6vw,3rem);color:#fff;margin:1rem 0 1rem}
+  .ai-feature .ai-lead{color:#cfe3e2;font-size:1.1rem;max-width:44ch}
+  .ai-list{list-style:none;margin-top:1.6rem;display:grid;gap:.85rem}
+  .ai-list li{display:flex;gap:.7rem;align-items:flex-start;color:#dbeceb;font-weight:500}
+  .ai-list li svg{width:20px;height:20px;color:var(--amber2);flex-shrink:0;margin-top:.2rem}
+  .ai-graphic{background:rgba(255,255,255,.055);border:1px solid rgba(234,184,102,.2);border-radius:22px;padding:1.6rem}
+  .ai-graphic .gt{display:flex;justify-content:space-between;align-items:center;color:#dbeceb;margin-bottom:1rem}
+  .ai-graphic .gt .gh{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amber2);font-weight:800}
+  .ai-graphic .gt .gp{font-size:.78rem;font-weight:700;color:#bcd6d5}
+  .ag-svg{width:100%;height:auto}
+  .ag-cap{display:flex;justify-content:space-between;margin-top:.8rem;color:#a9c7c6;font-size:.72rem;font-weight:600}
+
+  /* ── EXPERIENCE timeline ── */
+  .tl{position:relative;display:grid;gap:1.3rem}
+  .tl::before{content:'';position:absolute;inset-block:8px;inset-inline-start:11px;width:2px;background:linear-gradient(var(--amber),var(--amber2),transparent)}
+  html[dir="ltr"] .tl::before{inset-inline-start:11px}
+  .tl-item{position:relative;display:grid;grid-template-columns:auto 1fr;gap:1.6rem;background:var(--white);border:1px solid var(--line2);border-radius:var(--r);
+    padding:1.6rem 1.7rem;box-shadow:var(--shadow-sm);transition:transform .3s var(--ease),box-shadow .3s;margin-inline-start:2.4rem}
+  .tl-item::before{content:'';position:absolute;top:1.9rem;inset-inline-start:-2.4rem;width:14px;height:14px;border-radius:50%;background:var(--amber-grad);
+    box-shadow:0 0 0 5px var(--stone),0 0 0 6px var(--lined);transform:translateX(50%)}
+  html[dir="rtl"] .tl-item::before{transform:translateX(-50%)}
+  .tl-item:hover{transform:translateX(0) translateY(-4px);box-shadow:var(--shadow);border-color:var(--lined)}
+  .tl-when{font-weight:900;font-size:.92rem;white-space:nowrap;padding-top:.15rem;color:var(--amber);font-family:'Frank Ruhl Libre',serif;letter-spacing:.02em}
+  .tl-role{font-size:1.24rem;font-weight:800;color:var(--petrol)}
+  .tl-co{color:var(--soft);font-weight:600;margin-bottom:.65rem;font-size:.95rem}
+  .tl-co .pub{display:inline-block;font-size:.66rem;font-weight:800;color:#3a2408;background:var(--amber2);border-radius:100px;padding:.06rem .6rem;margin-inline-start:.5rem;vertical-align:middle}
+  .tl-li{color:var(--soft);font-size:.94rem;display:flex;gap:.6rem;margin-top:.32rem}
+  .tl-li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--amber);margin-top:.55em;flex-shrink:0}
+
+  /* ── TOOLKIT ── */
+  .grid3{display:grid;grid-template-columns:1.35fr 1fr;gap:clamp(1.8rem,4vw,3.4rem);align-items:start}
+  .block-h{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--amber);margin-bottom:1.2rem;font-weight:800;display:flex;align-items:center;gap:.6rem}
+  .block-h::after{content:'';flex:1;height:1px;background:var(--line2)}
+  .skill-chips{display:flex;flex-wrap:wrap;gap:.6rem}
+  .sc{font-size:.9rem;font-weight:700;color:var(--ink);background:var(--white);border:1px solid var(--line);border-radius:11px;padding:.62rem 1rem;box-shadow:var(--shadow-sm);transition:.25s}
+  .sc.ai{border-color:transparent;background:var(--amber-grad);color:#3a2408;box-shadow:var(--shadow-amber);font-weight:800}
+  .sc:hover{transform:translateY(-3px)}
+  .edu-list{display:grid;gap:.2rem}
+  .edu{display:flex;gap:1rem;align-items:flex-start;font-size:.95rem;padding-block:.75rem;border-bottom:1px dashed var(--line)}
+  .edu:last-child{border-bottom:0}
+  .edu .yr{font-weight:900;min-width:3.2em;color:var(--amber);font-family:'Frank Ruhl Libre',serif}
+  .edu .d{color:var(--soft)}
+  .langs{display:flex;gap:2rem;margin-top:1.8rem;flex-wrap:wrap}
+  .lng .lv{font-weight:900;font-size:1.1rem;color:var(--petrol)}.lng .ll{color:var(--muted);font-size:.85rem;font-weight:600}
+
+  /* ── CTA / FOOTER (petrol) ── */
+  footer{background:var(--petrol-grad2);color:#eaf3f2;position:relative;overflow:hidden;margin-top:0}
+  footer::before{content:'';position:absolute;inset:0;background:radial-gradient(60% 90% at 50% -10%,rgba(234,184,102,.18),transparent 55%);pointer-events:none}
+  footer .wrap{position:relative;z-index:1;padding-block:clamp(3.4rem,7vw,6rem) 2.4rem}
+  .cta-inner{text-align:center;max-width:760px;margin-inline:auto}
+  .cta-inner h2{font-size:clamp(2.2rem,6vw,3.6rem);margin:1rem 0;color:#fff;letter-spacing:-.02em}
+  .cta-inner h2 .grad{color:var(--amber2)}
+  .cta-inner p{color:#cfe3e2;max-width:48ch;margin:0 auto 2rem;font-size:1.06rem}
+  .foot-contact{display:flex;justify-content:center;gap:.85rem;flex-wrap:wrap}
+  .foot-contact .btn-outline{border-color:rgba(234,184,102,.45);color:#eef6f5}
+  .foot-contact .btn-outline:hover{border-color:var(--amber2);color:var(--amber2);background:rgba(234,184,102,.08)}
+  .foot-bot{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-top:3.4rem;padding-top:1.8rem;border-top:1px solid rgba(234,184,102,.2);color:#a9c7c6;font-size:.84rem;align-items:center}
+  .socials{display:flex;gap:.6rem}
+  .socials a{width:42px;height:42px;border-radius:11px;display:grid;place-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(234,184,102,.28);color:#cfe3e2;transition:.25s}
+  .socials a:hover{color:#3a2408;background:var(--amber2);border-color:var(--amber2);transform:translateY(-3px)}
+  .socials svg{width:18px;height:18px}
+  .foot-disc{color:#8fb0af;font-size:.78rem;margin-top:1rem;max-width:70ch}
+
+  .toast{position:fixed;bottom:24px;inset-inline:0;margin-inline:auto;width:max-content;max-width:90vw;background:var(--petrol);color:#fff;
+    padding:.9rem 1.35rem;border-radius:13px;z-index:1500;display:flex;align-items:center;gap:.6rem;font-weight:600;box-shadow:var(--shadow);
+    transform:translateY(140px);transition:transform .4s var(--ease)}
+  .toast.show{transform:none}.toast svg{width:20px;height:20px;color:var(--amber2)}
+
+  .rv{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+  .rv.in{opacity:1;transform:none}
+
+  @media(max-width:980px){
+    .hero-grid{grid-template-columns:1fr}.hero-visual{order:2;margin-top:1rem}
+    .about-grid{grid-template-columns:1fr}
+    .caps{grid-template-columns:1fr}.grid3{grid-template-columns:1fr}
+    .ai-grid{grid-template-columns:1fr}.ai-graphic{order:2}
+    .quote-band .wrap{grid-template-columns:1fr}.quote-mark{line-height:.9}
+  }
+  @media(max-width:760px){
+    .nav-links{display:none}.nav-act .btn{display:none}.burger{display:grid}
+    .facts{grid-template-columns:1fr;gap:2rem}.fact:not(:last-child)::after{display:none}
+    .fact{padding-bottom:2rem;border-bottom:1px solid rgba(234,184,102,.22)}.fact:last-child{border-bottom:0;padding-bottom:0}
+    .tl-item{grid-template-columns:1fr}.tl-when{padding-top:0}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+    .rv{opacity:1;transform:none}
+    .hero-eyebrow,.hero h1,.hero .role,.hero .lead,.rotate,.hero-cta,.hero-visual{opacity:1;animation:none}
+  }
+</style>
+<style id="canva-import-fix">
+#pre{display:none!important}
+#prog{display:none!important}
+.rv{opacity:1!important;transform:none!important;transition:none!important}
+header.nav{background:rgba(246,243,238,.96)!important;backdrop-filter:blur(16px) saturate(150%)!important;border-bottom:1px solid var(--line2)!important}
+</style>
+</head>
+<body>
+
+<div id="prog"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <div class="brand" data-go="home">Ofir<span class="bd"></span></div>
+    <nav class="nav-links">
+      <a data-go="about" data-i18n="nav.about">קצת עליי</a>
+      <a data-go="bring" data-i18n="nav.bring">מה אני מביא</a>
+      <a data-go="experience" data-i18n="nav.exp">ניסיון</a>
+      <a data-go="toolkit" data-i18n="nav.toolkit">כלים</a>
+      <a data-go="contact" data-i18n="nav.contact">צור קשר</a>
+    </nav>
+    <div class="nav-act">
+      <div class="lang"><button data-lang="he" class="on">עב</button><button data-lang="en">EN</button></div>
+      <a class="btn btn-amber" id="navCv" data-i18n="cta.cv">הורדת קו״ח</a>
+      <button class="burger" id="burger" aria-label="menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<div class="mob" id="mob">
+  <button class="mclose" id="mclose" aria-label="close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  <a data-go="about" data-i18n="nav.about">קצת עליי</a>
+  <a data-go="bring" data-i18n="nav.bring">מה אני מביא</a>
+  <a data-go="experience" data-i18n="nav.exp">ניסיון</a>
+  <a data-go="toolkit" data-i18n="nav.toolkit">כלים</a>
+  <a data-go="contact" data-i18n="nav.contact">צור קשר</a>
+</div>
+
+<main>
+
+<!-- ══ HERO ══ -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow hero-eyebrow" data-i18n="hero.hello">נעים להכיר, אני</span>
+        <h1 data-i18n="hero.name">אופיר ישראל</h1>
+        <div class="role" data-i18n="hero.role">רואה חשבון וחשב בכיר — שמביא לפיננסים <b>ראש טכנולוגי ויישום AI</b>.</div>
+        <p class="lead" data-i18n="hero.lead">12 שנות ניסיון, מתוכן חמש כחשב בחברה ציבורית. אוהב לחבר בין דיוק חשבונאי, ראייה עסקית וטכנולוגיה — ולהוביל את מחלקת הכספים קדימה.</p>
+        <div class="rotate"><span class="rk" data-i18n="hero.focus">מיקוד</span><span class="rw" id="rotw"></span></div>
+        <div class="hero-cta">
+          <a class="btn btn-amber btn-lg" id="heroCv" data-i18n="cta.cv">הורדת קו״ח</a>
+          <a class="btn btn-outline btn-lg" id="heroLi" target="_blank" rel="noopener" data-i18n="cta.li">LinkedIn</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <span class="float-chip fc1"><i></i>Power BI</span>
+        <span class="float-chip fc2"><i></i><span data-i18n="hv.growth">צמיחה שנתית</span></span>
+        <div class="chartcard">
+          <div class="cc-top">
+            <div>
+              <div class="lbl" data-i18n="hv.perf">ביצועים פיננסיים</div>
+              <div class="big num">+38%</div>
+            </div>
+            <div class="tag" data-i18n="hv.tag">מונע נתונים</div>
+          </div>
+          <svg class="cc-svg" viewBox="0 0 380 200" preserveAspectRatio="none" role="img" aria-label="finance chart">
+            <defs>
+              <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#eab866" stop-opacity=".5"/>
+                <stop offset="1" stop-color="#eab866" stop-opacity="0"/>
+              </linearGradient>
+              <linearGradient id="area2" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#7fdff0" stop-opacity=".3"/>
+                <stop offset="1" stop-color="#7fdff0" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <!-- gridlines -->
+            <g stroke="rgba(255,255,255,.09)" stroke-width="1">
+              <line x1="0" y1="50" x2="380" y2="50"/><line x1="0" y1="100" x2="380" y2="100"/><line x1="0" y1="150" x2="380" y2="150"/>
+            </g>
+            <!-- secondary (petrol/teal) area -->
+            <path d="M0,150 L48,140 L95,148 L143,128 L190,132 L238,112 L285,118 L333,98 L380,104 L380,200 L0,200 Z" fill="url(#area2)"/>
+            <path d="M0,150 L48,140 L95,148 L143,128 L190,132 L238,112 L285,118 L333,98 L380,104" fill="none" stroke="#7fdff0" stroke-width="2" stroke-opacity=".8" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- primary (amber) area+line -->
+            <path d="M0,168 L48,150 L95,158 L143,120 L190,128 L238,86 L285,96 L333,54 L380,40 L380,200 L0,200 Z" fill="url(#area)"/>
+            <path class="ccline" d="M0,168 L48,150 L95,158 L143,120 L190,128 L238,86 L285,96 L333,54 L380,40" fill="none" stroke="#eab866" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- points -->
+            <g fill="#fff" stroke="#dd8a2b" stroke-width="2.4">
+              <circle cx="238" cy="86" r="4"/><circle cx="333" cy="54" r="4"/><circle cx="380" cy="40" r="4.5"/>
+            </g>
+          </svg>
+          <div class="cc-legend">
+            <span><i style="background:#eab866"></i><span data-i18n="hv.legend1">רווחיות</span></span>
+            <span><i style="background:#7fdff0"></i><span data-i18n="hv.legend2">תזרים</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scrollcue"><span data-i18n="hero.scroll">גלול</span><div class="m"></div></div>
+</section>
+
+<!-- ══ FACTS BAND ══ -->
+<section class="facts-band">
+  <div class="wrap"><div class="facts rv" id="facts"></div></div>
+</section>
+
+<!-- ══ PULL QUOTE ══ -->
+<section class="quote-band">
+  <div class="wrap rv">
+    <div class="quote-mark">”</div>
+    <div class="quote-body">
+      <blockquote data-i18n="pq.text">הפיננסים העתידיים לא נמדדים רק בדיוק הדוח — אלא <span class="ac">במהירות התובנה</span>. תפקידי לחבר בין מספרים, מערכות ובינה מלאכותית כדי שההנהלה תחליט מהר וטוב יותר.</blockquote>
+      <div class="quote-rule"></div>
+      <div class="quote-by"><b data-cfg="fullName">אופיר ישראל</b> · <span data-i18n="pq.role">רו״ח וחשב בכיר</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ABOUT ══ -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="eyebrow" data-i18n="about.eyebrow">קצת עליי</span></div>
+    <div class="about-grid">
+      <div class="rv">
+        <p class="about-lead" data-i18n="about.p">רואה חשבון וחשב בכיר עם <span class="hl">12 שנות ניסיון</span>, מתוכן חמש בקבוצת חברות שבראשה חברה ציבורית. אני מחבר בין <span class="hl">דיוק חשבונאי</span>, <span class="hl">ראייה עסקית</span> ו<span class="hl">טכנולוגיה</span> — ואוהב במיוחד ליישם ולהוביל AI ואוטומציה שמפנים זמן מהעבודה הידנית אל התובנות וההחלטות.</p>
+        <div class="chips" id="strengths"></div>
+      </div>
+      <div class="about-side rv">
+        <div class="sh" data-i18n="about.sideh">במבט מהיר</div>
+        <div class="mini-stat"><span class="mv num">12+</span><span class="ml" data-i18n="about.ms1">שנות ניסיון בחשבונאות ופיננסים</span></div>
+        <div class="mini-stat"><span class="mv">IFRS</span><span class="ml" data-i18n="about.ms2">דוחות מאוחדים ודיווח לבורסה</span></div>
+        <div class="mini-stat"><span class="mv num">5</span><span class="ml" data-i18n="about.ms3">שנים כחשב בחברה ציבורית</span></div>
+        <div class="mini-stat"><span class="mv">AI</span><span class="ml" data-i18n="about.ms4">יישום ואוטומציה בפונקציית הכספים</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHAT I BRING ══ -->
+<section id="bring">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="eyebrow" data-i18n="bring.eyebrow">מה אני מביא</span><h2 data-i18n="bring.h2">שלוש נקודות חוזק <span class="ac">שמייחדות אותי</span></h2></div>
+    <div class="caps" id="caps"></div>
+  </div>
+</section>
+
+<!-- ══ AI FEATURE ══ -->
+<section class="ai-feature on-dark">
+  <div class="wrap">
+    <div class="ai-grid">
+      <div class="rv">
+        <span class="eyebrow" data-i18n="aif.eyebrow">מיקוד · בינה מלאכותית</span>
+        <h2 data-i18n="aif.h2">מ<span class="ac">עבודה ידנית</span> לתובנות מהירות</h2>
+        <p class="ai-lead" data-i18n="aif.lead">אני מיישם ומוביל כלי AI ואוטומציה לאורך פונקציית הכספים — מקצרים מחזורי דיווח, מקטינים טעויות ומפנים זמן לניתוח ולהחלטות.</p>
+        <ul class="ai-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="aif.li1">אוטומציה של איסוף, התאמות והכנת דוחות</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="aif.li2">דשבורדים ב‑Power BI לקבלת החלטות בזמן אמת</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="aif.li3">חיזוי ותהליכים חוצי‑מערכות שמשפרים דיוק ומהירות</span></li>
+        </ul>
+      </div>
+      <div class="ai-graphic rv">
+        <div class="gt"><span class="gh" data-i18n="aif.gh">זמן מחזור דיווח</span><span class="gp" data-i18n="aif.gp">ידני מול אוטומטי</span></div>
+        <svg class="ag-svg" viewBox="0 0 360 210" role="img" aria-label="reporting time comparison">
+          <defs>
+            <linearGradient id="bar1" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#2a6470"/><stop offset="1" stop-color="#3f8794"/></linearGradient>
+            <linearGradient id="bar2" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#dd8a2b"/><stop offset="1" stop-color="#eab866"/></linearGradient>
+          </defs>
+          <g stroke="rgba(255,255,255,.08)"><line x1="30" y1="40" x2="360" y2="40"/><line x1="30" y1="90" x2="360" y2="90"/><line x1="30" y1="140" x2="360" y2="140"/><line x1="30" y1="180" x2="360" y2="180"/></g>
+          <!-- descending trend line: manual → automated -->
+          <path d="M60,58 C130,70 150,150 300,168" fill="none" stroke="#eab866" stroke-width="2.5" stroke-dasharray="5 6" stroke-linecap="round" opacity=".85"/>
+          <!-- bars -->
+          <rect x="52" y="52" width="56" height="128" rx="6" fill="url(#bar1)"/>
+          <rect x="152" y="96" width="56" height="84" rx="6" fill="url(#bar1)" opacity=".8"/>
+          <rect x="272" y="150" width="56" height="30" rx="6" fill="url(#bar2)"/>
+          <!-- value tags -->
+          <g fill="#eaf3f2" font-family="Heebo,sans-serif" font-weight="800" font-size="15" text-anchor="middle">
+            <text x="80" y="44">100%</text><text x="180" y="88">~55%</text><text x="300" y="142" fill="#eab866">~25%</text>
+          </g>
+        </svg>
+        <div class="ag-cap"><span data-i18n="aif.c1">בסיס ידני</span><span data-i18n="aif.c2">שלב ביניים</span><span data-i18n="aif.c3">AI + אוטומציה</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ EXPERIENCE ══ -->
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="eyebrow" data-i18n="exp.eyebrow">ניסיון</span><h2 data-i18n="exp.h2">מסלול של אחריות גוברת</h2></div>
+    <div class="tl" id="timeline"></div>
+  </div>
+</section>
+
+<!-- ══ TOOLKIT ══ -->
+<section id="toolkit">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="eyebrow" data-i18n="tk.eyebrow">כלים · השכלה · שפות</span><h2 data-i18n="tk.h2">הארגז שאני מביא איתי</h2></div>
+    <div class="grid3">
+      <div class="rv">
+        <div class="block-h" data-i18n="tk.skills">תחומים וכלים</div>
+        <div class="skill-chips" id="skills"></div>
+        <div class="langs" id="langs"></div>
+      </div>
+      <div class="rv">
+        <div class="block-h" data-i18n="tk.edu">השכלה והסמכות</div>
+        <div class="edu-list" id="edu"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer id="contact" class="on-dark">
+  <div class="wrap">
+    <div class="cta-inner rv">
+      <span class="eyebrow" style="justify-content:center;display:inline-flex" data-i18n="ct.eyebrow">צור קשר</span>
+      <h2 data-i18n="ct.h2">נשמח לדבר על <span class="grad">הצעד הבא</span> 👋</h2>
+      <p data-i18n="ct.sub">פתוח להזדמנויות ניהוליות בכספים שאוהבות טכנולוגיה ו‑AI. תמיד שמח להכיר ולשוחח.</p>
+      <div class="foot-contact">
+        <a class="btn btn-amber btn-lg" id="ctMail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><span class="num" data-cfg="email">israel.ofir@gmail.com</span></a>
+        <a class="btn btn-outline btn-lg" id="ctPhone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg><span class="num" data-cfg="phoneDisplay" dir="ltr">052-877-5563</span></a>
+        <a class="btn btn-outline btn-lg" id="ctCv" data-i18n="cta.cv">הורדת קו״ח</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <div>© <span id="yr">2026</span> <span data-cfg="fullName">אופיר ישראל</span> · <span data-cfg="city">פתח תקווה</span></div>
+      <div class="socials">
+        <a id="soLinkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68zm1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
+        <a id="soMail" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></a>
+        <a id="soPhone" aria-label="Phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></a>
+      </div>
+    </div>
+    <p class="foot-disc" data-i18n="ct.disc">המלצות ותעודות יינתנו על פי דרישה.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg><span id="toastMsg"></span></div>
+
+<script>
+/* ════════════ CONFIG — ערוך כאן בלבד ════════════ */
+const CONFIG={
+  fullName:"אופיר ישראל", fullNameEn:"Ofir Israel",
+  phoneDisplay:"052-877-5563", phoneIntl:"972528775563",
+  email:"israel.ofir@gmail.com",
+  city:"פתח תקווה", cityEn:"Petah Tikva",
+  cvUrl:"Ofir-Israel-CV.pdf",            // ← קובץ קורות חיים (PDF) בתיקיית WEB
+  linkedin:"https://www.linkedin.com/"   // ← קישור LinkedIn אמיתי
+};
+
+const T={
+ he:{
+  "nav.about":"קצת עליי","nav.bring":"מה אני מביא","nav.exp":"ניסיון","nav.toolkit":"כלים","nav.contact":"צור קשר",
+  "cta.cv":"הורדת קו״ח","cta.li":"LinkedIn",
+  "hero.hello":"נעים להכיר, אני","hero.name":"אופיר ישראל",
+  "hero.role":"רואה חשבון וחשב בכיר — שמביא לפיננסים <b>ראש טכנולוגי ויישום AI</b>.",
+  "hero.lead":"12 שנות ניסיון, מתוכן חמש כחשב בחברה ציבורית. אוהב לחבר בין דיוק חשבונאי, ראייה עסקית וטכנולוגיה — ולהוביל את מחלקת הכספים קדימה.",
+  "hero.focus":"מיקוד","hero.scroll":"גלול","pill.ipo":"הנפקות",
+  "hv.perf":"ביצועים פיננסיים","hv.tag":"מונע נתונים","hv.growth":"צמיחה שנתית","hv.legend1":"רווחיות","hv.legend2":"תזרים",
+  "pq.text":"הפיננסים העתידיים לא נמדדים רק בדיוק הדוח — אלא <span class='ac'>במהירות התובנה</span>. תפקידי לחבר בין מספרים, מערכות ובינה מלאכותית כדי שההנהלה תחליט מהר וטוב יותר.",
+  "pq.role":"רו״ח וחשב בכיר",
+  "about.eyebrow":"קצת עליי",
+  "about.p":"רואה חשבון וחשב בכיר עם <span class='hl'>12 שנות ניסיון</span>, מתוכן חמש בקבוצת חברות שבראשה חברה ציבורית. אני מחבר בין <span class='hl'>דיוק חשבונאי</span>, <span class='hl'>ראייה עסקית</span> ו<span class='hl'>טכנולוגיה</span> — ואוהב במיוחד ליישם ולהוביל AI ואוטומציה שמפנים זמן מהעבודה הידנית אל התובנות וההחלטות.",
+  "about.sideh":"במבט מהיר",
+  "about.ms1":"שנות ניסיון בחשבונאות ופיננסים","about.ms2":"דוחות מאוחדים ודיווח לבורסה","about.ms3":"שנים כחשב בחברה ציבורית","about.ms4":"יישום ואוטומציה בפונקציית הכספים",
+  "bring.eyebrow":"מה אני מביא","bring.h2":"שלוש נקודות חוזק <span class='ac'>שמייחדות אותי</span>",
+  "aif.eyebrow":"מיקוד · בינה מלאכותית","aif.h2":"מ<span class='ac'>עבודה ידנית</span> לתובנות מהירות",
+  "aif.lead":"אני מיישם ומוביל כלי AI ואוטומציה לאורך פונקציית הכספים — מקצרים מחזורי דיווח, מקטינים טעויות ומפנים זמן לניתוח ולהחלטות.",
+  "aif.li1":"אוטומציה של איסוף, התאמות והכנת דוחות","aif.li2":"דשבורדים ב‑Power BI לקבלת החלטות בזמן אמת","aif.li3":"חיזוי ותהליכים חוצי‑מערכות שמשפרים דיוק ומהירות",
+  "aif.gh":"זמן מחזור דיווח","aif.gp":"ידני מול אוטומטי","aif.c1":"בסיס ידני","aif.c2":"שלב ביניים","aif.c3":"AI + אוטומציה",
+  "exp.eyebrow":"ניסיון","exp.h2":"מסלול של אחריות גוברת",
+  "tk.eyebrow":"כלים · השכלה · שפות","tk.h2":"הארגז שאני מביא איתי","tk.skills":"תחומים וכלים","tk.edu":"השכלה והסמכות",
+  "ct.eyebrow":"צור קשר","ct.h2":"נשמח לדבר על <span class='grad'>הצעד הבא</span> 👋",
+  "ct.sub":"פתוח להזדמנויות ניהוליות בכספים שאוהבות טכנולוגיה ו‑AI. תמיד שמח להכיר ולשוחח.",
+  "ct.disc":"המלצות ותעודות יינתנו על פי דרישה.",
+  "toast.cv":"קובץ קורות החיים יתווסף בהעלאה לאוויר"
+ },
+ en:{
+  "nav.about":"About","nav.bring":"What I bring","nav.exp":"Experience","nav.toolkit":"Toolkit","nav.contact":"Contact",
+  "cta.cv":"Download CV","cta.li":"LinkedIn",
+  "hero.hello":"Nice to meet you, I'm","hero.name":"Ofir Israel",
+  "hero.role":"CPA & senior controller — bringing a <b>tech mindset and AI</b> to finance.",
+  "hero.lead":"12 years of experience, five of them as a controller in a publicly-traded group. I love connecting accounting precision, business insight and technology — and leading the finance function forward.",
+  "hero.focus":"Focus","hero.scroll":"Scroll","pill.ipo":"IPO",
+  "hv.perf":"Financial performance","hv.tag":"Data-driven","hv.growth":"Annual growth","hv.legend1":"Profitability","hv.legend2":"Cash flow",
+  "pq.text":"The finance of the future isn't measured by report accuracy alone — but by <span class='ac'>speed of insight</span>. My role is to connect numbers, systems and AI so leadership decides faster and better.",
+  "pq.role":"CPA & Senior Controller",
+  "about.eyebrow":"About me",
+  "about.p":"CPA and senior controller with <span class='hl'>12 years of experience</span>, five of them in a publicly-traded group. I connect <span class='hl'>accounting precision</span>, <span class='hl'>business insight</span> and <span class='hl'>technology</span> — and especially love implementing and leading AI and automation that free time from manual work for insight and decisions.",
+  "about.sideh":"At a glance",
+  "about.ms1":"Years in accounting & finance","about.ms2":"Consolidated statements & exchange reporting","about.ms3":"Years as a public-co. controller","about.ms4":"Implementation & automation in finance",
+  "bring.eyebrow":"What I bring","bring.h2":"Three strengths <span class='ac'>that set me apart</span>",
+  "aif.eyebrow":"Focus · Artificial Intelligence","aif.h2":"From <span class='ac'>manual work</span> to fast insight",
+  "aif.lead":"I implement and lead AI and automation across the finance function — shortening reporting cycles, reducing errors and freeing time for analysis and decisions.",
+  "aif.li1":"Automating collection, reconciliation and report preparation","aif.li2":"Power BI dashboards for real-time decision-making","aif.li3":"Forecasting and cross-system processes that boost accuracy and speed",
+  "aif.gh":"Reporting cycle time","aif.gp":"Manual vs. automated","aif.c1":"Manual baseline","aif.c2":"Interim stage","aif.c3":"AI + automation",
+  "exp.eyebrow":"Experience","exp.h2":"A path of growing responsibility",
+  "tk.eyebrow":"Toolkit · Education · Languages","tk.h2":"The toolkit I bring along","tk.skills":"Domains & tools","tk.edu":"Education & certifications",
+  "ct.eyebrow":"Contact","ct.h2":"Let's talk about <span class='grad'>what's next</span> 👋",
+  "ct.sub":"Open to finance-leadership opportunities that embrace technology and AI. Always happy to connect and chat.",
+  "ct.disc":"References and certificates available on request.",
+  "toast.cv":"The CV file will be added on deployment"
+ }
+};
+
+const ROT={he:["AI בפיננסים","דוחות מאוחדים IFRS","Power BI ואנליטיקה","אוטומציה של תהליכים","ליווי הנפקות","תזרים ותקצוב"],
+           en:["AI in Finance","IFRS Consolidation","Power BI & Analytics","Process Automation","IPO & Prospectus","Cash Flow & Budgeting"]};
+
+const FACTS=[
+ {count:12, he:"שנות ניסיון", en:"Years of experience"},
+ {count:5, he:"שנים כחשב בחברה ציבורית", en:"Years as a public-co. controller"},
+ {big:"מאות", bigEn:"100s", he:"מיליוני ₪ מנוהלים ומדווחים", en:"₪M reported & managed"}
+];
+
+const CAPS=[
+ {c:'c1',i:'ai',star:true, he:["יישום והובלת AI","מיישם ומוביל כלי AI ואוטומציה בפונקציית הכספים — ממירים עבודה ידנית לתובנות ולהחלטות מהירות."],
+                            en:["Implementing & leading AI","I implement and lead AI and automation across the finance function — turning manual work into insight and faster decisions."]},
+ {c:'c2',i:'fin', he:["הובלת כספים בחברה ציבורית","דוחות מאוחדים IFRS, דיווח לבורסה, תקציב ותזרים וניהול מחלקת הכספים — מקצה לקצה."],
+                  en:["Public-company finance leadership","IFRS consolidated statements, exchange reporting, budgeting, cash flow and running the finance department — end to end."]},
+ {c:'c3',i:'data', he:["דאטה, BI ותהליכים","Power BI ודשבורדים, חיזוי, והובלת תהליכים ארגוניים חוצי‑מערכות שמשפרים דיוק ומהירות."],
+                   en:["Data, BI & process","Power BI dashboards, forecasting, and leading cross-system organizational processes that boost accuracy and speed."]}
+];
+
+const STRENGTHS={he:["הובלת מחלקת כספים","דיווח לחברה ציבורית","IFRS ואיחוד דוחות","יישום AI ואוטומציה","Power BI","הובלת תהליכים"],
+                 en:["Finance leadership","Public-company reporting","IFRS & consolidation","AI & automation","Power BI","Process leadership"]};
+
+const TIMELINE=[
+ {when:"2019 — היום", whenEn:"2019 — Present", pub:true,
+  role:["חשב (Controller)","Controller"], co:["מרכז הפורמיקה אברבוך בע״מ","Formica Center Arbuch Ltd"],
+  he:["דוחות כספיים מאוחדים רבעוניים ושנתיים לפי IFRS ותקנות ני״ע","ניהול ישיר של מחלקת הכספים — הנה״ח, שכר וגבייה","תקציב מול ביצוע חודשי ועבודה מול בעלי מניות, מנכ״ל ועו״ד"],
+  en:["Quarterly & annual consolidated statements under IFRS & securities regulations","Direct management of the finance department — bookkeeping, payroll, collections","Monthly budget-vs-actual; work with shareholders, CEO and counsel"]},
+ {when:"2016 — 2019", whenEn:"2016 — 2019", pub:false,
+  role:["רואה חשבון","CPA"], co:["Grant Thornton (פאהן קנה ושות׳)","Grant Thornton Israel (Fahn Kanne)"],
+  he:["איחוד דוחות עם חברות בינ״ל ועבודה מול מטה האם בחו״ל","הכנת תשקיף וליווי הנפקה בבורסה","ביקורת עומק של שכר בארגונים גדולים"],
+  en:["International consolidation and work with overseas parent HQ","Prospectus preparation and IPO support","In-depth payroll audits in large organizations"]},
+ {when:"2013 — 2016", whenEn:"2013 — 2016", pub:false,
+  role:["רואה חשבון","CPA"], co:["זאב סלומון ושות׳","Zeev Solomon & Co"],
+  he:["ביקורת חברות בנדל״ן, תעשייה ומסחר","בניית מודלים כלכליים ותזרימי מזומנים לניתוחי רווחיות"],
+  en:["Audits across real estate, industry and commerce","Building economic models and cash-flow analyses"]}
+];
+
+const SKILLS=[
+ {ai:true, he:"יישום AI", en:"AI implementation"},
+ {ai:true, he:"אוטומציה", en:"Automation"},
+ {ai:true, he:"Power BI / Analytics", en:"Power BI / Analytics"},
+ {he:"דוחות מאוחדים IFRS", en:"IFRS consolidation"},
+ {he:"דיווח לבורסה", en:"Exchange reporting"},
+ {he:"תקציב ותזרים", en:"Budgeting & cash flow"},
+ {he:"ביקורת מערכות מידע", en:"IS auditing"},
+ {he:"ליווי הנפקות ותשקיף", en:"IPO & prospectus"},
+ {he:"חשבשבת · קונטו · מכפל", en:"Hashavshevet · Konto · Michpal"}
+];
+
+const EDU=[
+ {yr:"2023", he:"הכשרת דירקטורים — המרכז הארצי", en:"Directors' training — National Center"},
+ {yr:"2022", he:"קריפטו, ניהול סיכונים ומלכ״רים — לשכת רו״ח", en:"Crypto, risk mgmt & NPOs — Inst. of CPAs"},
+ {yr:"2021", he:"ניהול תיק השקעות וניתוח טכני — פסגות", en:"Investment portfolio & technical analysis — Psagot"},
+ {yr:"2015", he:"רישיון רואה חשבון", en:"CPA license"},
+ {yr:"2012", he:"B.A מנהל עסקים — חשבונאות ומערכות מידע, אונו", en:"B.A. Business Admin — Accounting & IS, Ono"}
+];
+
+const LANGS=[
+ {lv:"עברית", lvEn:"Hebrew", he:"שפת אם", en:"Native"},
+ {lv:"אנגלית", lvEn:"English", he:"רמה טובה מאוד", en:"Very good"}
+];
+
+const IC='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">';
+const ICONS={
+ ai:IC+'<path d="M12 3a3 3 0 0 0-3 3 3 3 0 0 0-1 5.8V14a3 3 0 0 0 3 3h2a3 3 0 0 0 3-3v-2.2A3 3 0 0 0 15 6a3 3 0 0 0-3-3Z"/><path d="M12 17v4M9 21h6"/></svg>',
+ fin:IC+'<path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg>',
+ data:IC+'<rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M17.5 14v7M14 17.5h7"/></svg>',
+ check:IC+'<path d="M20 6 9 17l-5-5"/></svg>'
+};
+
+const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
+let LANG=(()=>{try{return localStorage.getItem('ofir-l2-lang')||'he'}catch(e){return 'he'}})();
+const L=o=>LANG==='he'?o.he:o.en;
+
+function render(){
+  $('#facts').innerHTML=FACTS.map(f=>`<div class="fact"><div class="n">${f.count!=null?`<span class="num" data-count="${f.count}">0</span>`:(LANG==='he'?f.big:f.bigEn)}</div><div class="l">${f[LANG]}</div></div>`).join('');
+  $('#caps').innerHTML=CAPS.map((c,i)=>{const t=L(c);return `<div class="cap ${c.c} rv"><span class="idx">0${i+1}</span>${c.star?`<span class="star">★ AI</span>`:''}<div class="ic">${ICONS[c.i]}</div><h3>${t[0]}</h3><p>${t[1]}</p><div class="rule"></div></div>`;}).join('');
+  $('#strengths').innerHTML=STRENGTHS[LANG].map(s=>`<span class="chip">${ICONS.check}${s}</span>`).join('');
+  $('#timeline').innerHTML=TIMELINE.map(t=>{const li=L(t),role=LANG==='he'?t.role[0]:t.role[1],co=LANG==='he'?t.co[0]:t.co[1],when=LANG==='he'?t.when:t.whenEn;
+    const pub=t.pub?`<span class="pub">${LANG==='he'?'חברה ציבורית':'Public'}</span>`:'';
+    return `<div class="tl-item rv"><div class="tl-when num">${when}</div><div><div class="tl-role">${role}</div><div class="tl-co">${co}${pub}</div>${li.map(x=>`<div class="tl-li">${x}</div>`).join('')}</div></div>`;}).join('');
+  $('#skills').innerHTML=SKILLS.map(s=>`<span class="sc${s.ai?' ai':''}">${s[LANG]}</span>`).join('');
+  $('#edu').innerHTML=EDU.map(e=>`<div class="edu"><span class="yr num">${e.yr}</span><span class="d">${e[LANG]}</span></div>`).join('');
+  $('#langs').innerHTML=LANGS.map(l=>`<div class="lng"><div class="lv">${LANG==='he'?l.lv:l.lvEn}</div><div class="ll">${l[LANG]}</div></div>`).join('');
+  rvBind(); resetRotate();
+}
+function applyLang(lang){
+  LANG=lang; try{localStorage.setItem('ofir-l2-lang',lang)}catch(e){}
+  document.documentElement.lang=lang; document.documentElement.dir=lang==='he'?'rtl':'ltr';
+  $$('[data-i18n]').forEach(el=>{const k=el.getAttribute('data-i18n'); if(T[lang][k]!=null) el.innerHTML=T[lang][k];});
+  $$('.lang button').forEach(b=>b.classList.toggle('on',b.dataset.lang===lang));
+  render(); applyConfig();
+}
+function applyConfig(){
+  $$('[data-cfg]').forEach(el=>{const k=el.getAttribute('data-cfg'); if(CONFIG[k]) el.textContent=(k==='fullName'&&LANG==='en')?CONFIG.fullNameEn:(k==='city'&&LANG==='en')?CONFIG.cityEn:CONFIG[k];});
+  ['heroCv','navCv','ctCv'].forEach(id=>{const el=document.getElementById(id);if(el){el.href=CONFIG.cvUrl;el.setAttribute('download','');}});
+  $('#heroLi').href=CONFIG.linkedin; $('#soLinkedin').href=CONFIG.linkedin;
+  $('#ctMail').href='mailto:'+CONFIG.email; $('#soMail').href='mailto:'+CONFIG.email;
+  $('#ctPhone').href='tel:+'+CONFIG.phoneIntl; $('#soPhone').href='tel:+'+CONFIG.phoneIntl;
+  $('#yr').textContent=new Date().getFullYear();
+}
+
+function go(id){const el=document.getElementById(id);if(!el)return;closeMob();el.scrollIntoView({behavior:'smooth',block:'start'});}
+$$('[data-go]').forEach(el=>el.addEventListener('click',()=>go(el.dataset.go)));
+$$('.lang button').forEach(b=>b.addEventListener('click',()=>applyLang(b.dataset.lang)));
+const nav=$('#nav');
+function onScroll(){const y=scrollY;nav.classList.toggle('solid',y>40);const h=document.documentElement.scrollHeight-innerHeight;$('#prog').style.width=(h>0?y/h*100:0)+'%';}
+addEventListener('scroll',onScroll,{passive:true});
+const spy=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)$$('.nav-links a').forEach(a=>a.classList.toggle('active',a.dataset.go===e.target.id));}),{rootMargin:'-45% 0px -50% 0px'});
+['home','about','bring','experience','toolkit','contact'].forEach(id=>{const el=document.getElementById(id);if(el)spy.observe(el);});
+
+const mob=$('#mob');
+$('#burger').addEventListener('click',()=>{mob.classList.add('open');document.body.style.overflow='hidden';});
+function closeMob(){mob.classList.remove('open');document.body.style.overflow='';}
+$('#mclose').addEventListener('click',closeMob);
+
+let rio;
+function rvBind(){
+  if(!rio)rio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');
+    if(e.target.matches('[data-count]'))runCount(e.target);e.target.querySelectorAll('[data-count]').forEach(runCount);rio.unobserve(e.target);}}),{threshold:.18});
+  $$('.rv:not(.in)').forEach((el,i)=>{el.style.transitionDelay=Math.min(i%4,3)*.07+'s';rio.observe(el);});
+  $$('[data-count]').forEach(el=>{if(!el.closest('.rv'))rio.observe(el);});
+}
+function runCount(el){if(el.dataset.done)return;el.dataset.done='1';const tgt=parseFloat(el.dataset.count),dec=tgt%1!==0,dur=1500,t0=performance.now();
+  (function tick(now){const p=Math.min((now-t0)/dur,1),e=1-Math.pow(1-p,3);el.textContent=dec?(tgt*e).toFixed(2):Math.round(tgt*e).toLocaleString('en-US');if(p<1)requestAnimationFrame(tick);})(t0);}
+
+let rotT;
+function resetRotate(){clearInterval(rotT);const w=$('#rotw');const arr=ROT[LANG];let i=0;w.textContent=arr[0];w.style.opacity=1;
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  rotT=setInterval(()=>{w.style.transition='opacity .35s';w.style.opacity=0;setTimeout(()=>{i=(i+1)%arr.length;w.textContent=arr[i];w.style.opacity=1;},350);},2400);}
+
+function toast(m){$('#toastMsg').textContent=m;const t=$('#toast');t.classList.add('show');clearTimeout(window.__tt);window.__tt=setTimeout(()=>t.classList.remove('show'),3600);}
+['heroCv','navCv','ctCv'].forEach(id=>{const el=document.getElementById(id);if(el)el.addEventListener('click',ev=>{if(CONFIG.cvUrl==='Ofir-Israel-CV.pdf'){ev.preventDefault();toast(T[LANG]['toast.cv']);}});});
+
+applyLang(LANG); onScroll();
+</script>
+</body>
+</html>
